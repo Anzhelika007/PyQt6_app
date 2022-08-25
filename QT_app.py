@@ -2,6 +2,7 @@ import sys
 from PyQt6.QtWidgets import QApplication, QDialog
 from ui_imagedialog import Ui_MainWindow
 
+
 from Base_SQLite import Interaction
 
 
