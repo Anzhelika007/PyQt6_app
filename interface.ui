@@ -628,7 +628,7 @@ QTableWidget  QTableCornerButton::sections   {
                   <widget class="QTableWidget" name="tableWidget">
                    <property name="minimumSize">
                     <size>
-                     <width>607</width>
+                     <width>20</width>
                      <height>0</height>
                     </size>
                    </property>
@@ -642,13 +642,13 @@ QTableWidget  QTableCornerButton::sections   {
                     <bool>false</bool>
                    </attribute>
                    <attribute name="horizontalHeaderDefaultSectionSize">
-                    <number>150</number>
+                    <number>100</number>
                    </attribute>
                    <attribute name="horizontalHeaderHighlightSections">
                     <bool>false</bool>
                    </attribute>
                    <attribute name="horizontalHeaderMinimumSectionSize">
-                    <number>150</number>
+                    <number>100</number>
                    </attribute>
                    <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
                     <bool>true</bool>
@@ -659,11 +659,6 @@ QTableWidget  QTableCornerButton::sections   {
                    <attribute name="verticalHeaderStretchLastSection">
                     <bool>false</bool>
                    </attribute>
-                   <column>
-                    <property name="text">
-                     <string>ID</string>
-                    </property>
-                   </column>
                    <column>
                     <property name="text">
                      <string>Username</string>
