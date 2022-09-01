@@ -648,7 +648,7 @@ QTableWidget  QTableCornerButton::sections   {
                     <bool>false</bool>
                    </attribute>
                    <attribute name="horizontalHeaderMinimumSectionSize">
-                    <number>100</number>
+                    <number>150</number>
                    </attribute>
                    <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
                     <bool>true</bool>
