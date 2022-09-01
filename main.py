@@ -18,12 +18,15 @@ class UI(QMainWindow):
         # load the ui file
         uic.loadUi("interface.ui", self)
         # Манипуляции
-        self.label_11.setText('erthtzrjnsymzgs')
+        #self.labetableWidgetl_11.setText('erthtzrjnsymzgs')
         # вызвали функцию показа таблицы
         self.load_db()
-        # self.addUserBtn.clicked.connect(self.regist)
 
         self.addUserBtn.clicked.connect(self.reg)
+        self.addUserBtn.clicked.connect(self.load_db)
+
+        # вызвали функцию показа обновленную таблицы
+        self.load_db()
 
     def reg(self):
         self.user_login = self.userName.text()
@@ -37,6 +40,11 @@ class UI(QMainWindow):
         cursor.execute("INSERT INTO users(Username_id, Email, PhoneNumber) VALUES (?,?,?)", self.user_value)
         self.conn.commit()
         cursor.close()
+
+        self.userName.clear()
+        self.email.clear()
+        self.phoneNamber.clear()
+
 
     def load_db(self):
         self.conn = sqlite3.connect('database.db')
@@ -53,6 +61,9 @@ class UI(QMainWindow):
             self.tableWidget.setItem(self.table_row, 2, QtWidgets.QTableWidgetItem(row[2]))
             self.table_row = self.table_row + 1
         cursor.close()
+
+
+
 
         # show the app
         self.show()
