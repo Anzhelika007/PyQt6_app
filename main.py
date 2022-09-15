@@ -4,7 +4,7 @@ import sqlite3
 # Для динамической конвертации файла
 from PyQt5 import uic
 # Импортируем все виджеты, которые собираемся использовать в работе
-from PyQt5.QtWidgets import QApplication, QMainWindow, QDialog, QWidget, QHeaderView
+from PyQt5.QtWidgets import QApplication, QMainWindow
 from PyQt5 import QtWidgets
 
 
