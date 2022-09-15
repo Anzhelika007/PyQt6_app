@@ -18,7 +18,7 @@ class UI(QMainWindow):
         # load the ui file
         uic.loadUi("interface.ui", self)
         # Манипуляции
-        #self.labetableWidgetl_11.setText('erthtzrjnsymzgs')
+
         # вызвали функцию показа таблицы
         self.load_db()
 
@@ -53,6 +53,7 @@ class UI(QMainWindow):
 
         # кол-во строк
         self.tableWidget.setRowCount(10)
+        self.tableWidget.verticalHeader().setVisible(False)
 
         self.table_row = 0
         for row in cursor.execute(self.show_users):
